@@ -1,0 +1,17 @@
+title 0.6: New note
+note over browser:
+user wirting form and click
+submit button
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server:
+received user data and
+Unmarhal JSON data 
+store into Database
+end note
+
+server-->browser:[{message: "note created"}]
+note over browser:
+append new element to page
+end note
